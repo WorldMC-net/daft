@@ -33,7 +33,7 @@ module.exports = {
         message.delete()
         author.send({
             embeds: [FailResponse]
-        })
+        }).catch((e) => {})
         return
     }
 }

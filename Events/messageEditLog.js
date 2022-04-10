@@ -10,7 +10,7 @@ module.exports = {
     async execute(oldMessage, newMessage) {
         const { member, guild, channel } = oldMessage;
 
-        if (member.user.bot || oldMessage.content == newMessage.content) {
+        if ( member.user.bot || oldMessage.content == newMessage.content) {
             return
         }
 
